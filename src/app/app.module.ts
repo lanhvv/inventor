@@ -6,10 +6,17 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InventorHomeComponent, KeysPipe } from './modules/inventor-home/inventor-home.component';
+import { InventorProductsComponent } from './modules/inventor-products/inventor-products.component';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InventorHomeComponent,
+    KeysPipe,
+    InventorProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     InputTextModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ButtonModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

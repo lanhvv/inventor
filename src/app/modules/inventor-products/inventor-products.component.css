@@ -1,0 +1,37 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 2vw;
+}
+
+.title span {
+    margin: 0 1vw;
+}
+
+.title span > input{
+    border: 0px;
+    border-radius: 1vw;
+}
+
+.title span ::ng-deep .p-inputtext::placeholder {
+    color: var(--main-color) !important;
+}
+
+.title span ::ng-deep .p-inputtext:enabled:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: none;
+}
+
+.title span ::ng-deep .p-inputtext:enabled:hover {
+    border-color: var(--main-color) !important;
+} 
+
+.title span .pi-search {
+    color: var(--main-color) !important;
+}
+
+.title ::ng-deep .p-button {
+    background-color: rgb(81, 5, 173);
+    color: white;
+    border: 0px;
+}
