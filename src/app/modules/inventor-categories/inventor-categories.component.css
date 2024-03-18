@@ -1,0 +1,55 @@
+.sub-1 {
+    padding: 0px 2vw;
+    margin-bottom: 1vh;
+}
+
+.sub-1 > div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.sub-1 > div button {
+    border: 0px;
+    width: 7vw;
+    height: 4vh;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 14px;
+    border-radius: 1vw;
+}
+
+.sub-1 > div button > i {
+    margin-right: 0.5vw;
+}
+
+.sub-2 {
+    background-color: white;
+    height: 37vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+    /* align-items: center; */
+    row-gap: 2vw;
+    column-gap: 4vw;
+}
+
+.sub-2 > div {
+    width: 27%;
+    /* height: 25vh; */
+    background-color: var(--main-color-1);
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+.sub-2 > div > div {
+    height: 60%;
+    background-color: rgb(177, 122, 243);
+    color: rgb(93, 2, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-radius: 1vw;
+}
+

@@ -1,0 +1,121 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 2vw;
+}
+
+.title span {
+    margin: 0 1vw;
+}
+
+.title span > input{
+    border: 0px;
+    border-radius: 1vw;
+}
+
+.title span ::ng-deep .p-inputtext::placeholder {
+    color: var(--main-color) !important;
+}
+
+.title span ::ng-deep .p-inputtext:enabled:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: none;
+}
+
+.title span ::ng-deep .p-inputtext:enabled:hover {
+    border-color: var(--main-color) !important;
+} 
+
+.title span .pi-search {
+    color: var(--main-color) !important;
+}
+
+.title ::ng-deep .p-button {
+    background-color: rgb(81, 5, 173);
+    color: white;
+    border: 0px;
+}
+
+.sub {
+    padding: 2vw;
+    height: 80vh;
+    background-color: white;
+}
+
+.sub-1 {
+    height: 40%;
+    display: flex;
+    column-gap: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.sub-1 > div {
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 15%;
+    height: 100%;
+    background-color: var(--main-color-1);
+}
+
+.sub-1 > div > div {
+    background-image: url('https://images.unsplash.com/photo-1535401991746-da3d9055713e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwzNHx8c2hvcHxlbnwxfHx8fDE2OTM5MjMwMDB8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-size: cover;
+    height: 70%;
+    border-radius: 1vw;
+}
+
+.sub-1 > div:hover {
+    background-color: rgb(198, 156, 250);
+    border: 0.5px solid rgb(149, 80, 235);
+}
+
+.sub-1 > div:hover > div {
+    border: 0.5px solid rgb(149, 80, 235);
+}
+
+.sub-2 {
+    padding: 1vw;
+    height: 60%;
+    width: 50%;
+    border: 0.5px solid rgb(149, 80, 235);
+    border-radius: 1vw;
+}
+
+.sub-2 > div:first-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sub-2 > div:first-child h1 {
+    margin: 0px;
+}
+
+.sample-img {
+    background-image: url('https://images.unsplash.com/photo-1535401991746-da3d9055713e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwzNHx8c2hvcHxlbnwxfHx8fDE2OTM5MjMwMDB8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-size: cover;
+    height: 10vh;
+    width: 15%;
+}
+
+.sub-2 > div:nth-child(2) {
+    display: flex;
+    column-gap: 1vw;
+    margin-top: 1vw;
+}
+
+.sub-2 > div:nth-child(2) >  div {
+    border-radius: 1vw;
+}
+
+.sub-2 > div:last-child {
+    margin-top: 1vw;
+}
+
+.sub-2 > div:last-child > table{
+    width: 100%;
+}
+
+.sub-2 > div:last-child > table  td {
+    padding: 0.5vw 0;
+}

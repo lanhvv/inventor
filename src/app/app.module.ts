@@ -10,13 +10,17 @@ import { InventorHomeComponent, KeysPipe } from './modules/inventor-home/invento
 import { InventorProductsComponent } from './modules/inventor-products/inventor-products.component';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { InventorCategoriesComponent } from './modules/inventor-categories/inventor-categories.component';
+import { InventorStoresComponent } from './modules/inventor-stores/inventor-stores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InventorHomeComponent,
     KeysPipe,
-    InventorProductsComponent
+    InventorProductsComponent,
+    InventorCategoriesComponent,
+    InventorStoresComponent
   ],
   imports: [
     BrowserModule,
