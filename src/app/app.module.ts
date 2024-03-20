@@ -12,6 +12,16 @@ import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { InventorCategoriesComponent } from './modules/inventor-categories/inventor-categories.component';
 import { InventorStoresComponent } from './modules/inventor-stores/inventor-stores.component';
+import { RouterModule, Routes } from '@angular/router';
+
+export const appRoutes: Routes = [
+  {path:"home", component: InventorHomeComponent},
+  {path:"products", component: InventorProductsComponent},
+  {path:"categories", component: InventorCategoriesComponent},
+  {path:"stores", component: InventorStoresComponent},
+  {path:"", redirectTo: 'home', pathMatch: 'full'},
+  {path:"**", component: InventorHomeComponent},
+]
 
 @NgModule({
   declarations: [
@@ -30,9 +40,11 @@ import { InventorStoresComponent } from './modules/inventor-stores/inventor-stor
     FormsModule,
     ReactiveFormsModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
