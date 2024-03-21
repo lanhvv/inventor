@@ -1,7 +1,0 @@
-/* You can add global styles to this file, and also import other style files */
-:root {
-    font-family: Arial, Helvetica, sans-serif;
-    --main-color: rgb(125, 44, 224);
-    --main-color-1: rgb(244, 243, 243);
-    background-color: var(--main-color-1);
-}
