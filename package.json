@@ -1,12 +1,15 @@
 {
-  "name": "weather-forecast",
+  "name": "inventor",
   "version": "0.0.0",
+  "homepage": "https://lanhvv.github.io/inventor/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "primeicons": "^6.0.1",
     "primeng": "^16.9.1",
     "rxjs": "~7.8.0",
